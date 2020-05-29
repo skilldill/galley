@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Использовать в нужных местах */
+.custom-font {
+  font-family: 'Ruslan Display', cursive;
+}
