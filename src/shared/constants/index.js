@@ -7,7 +7,8 @@ export const URLS = {
 export const API_URLS = {
     BASE: 'http://localhost:3000',
     BOARD: '/board',
-    TASK_CHANGE: '/task/change'
+    TASK_CHANGE: '/task/change',
+    USERS: '/users'
 }
 
 export const LOAD_STATUSES = {

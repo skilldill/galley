@@ -12,4 +12,9 @@ export class ApiService {
     static changeTask = (task) => {
         return httpClient.post(API_URLS.TASK_CHANGE, task);
     }
+
+    /** Получение гребцов */
+    static getUsers = () => {
+        return httpClient.get(API_URLS.USERS);
+    }
 } 

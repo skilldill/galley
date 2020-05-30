@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import cn from "classnames";
 import { useDispatch } from "react-redux";
+import { DeleteOutlined } from "@ant-design/icons";
 
 import { Button } from "antd";
 import { ApiService } from "../../../../shared/http";
@@ -27,17 +28,25 @@ export const Task = (props) => {
         }
     }
 
-    const handleClickNext = async () => {
+    const changeTask = async (status) => {
         try {
             await ApiService.changeTask({
                 ...task,
-                status: task.status + 1
+                status: status
             })
 
             dispatch(BoardActions.fetchTasks());
         } catch (error) {
             console.log(error);
         }
+    }
+    
+    const handleClickNext = () => {
+        changeTask(task.status + 1);
+    }
+
+    const handleClickRemove = () => {
+        changeTask(4);
     }
 
     return (
@@ -47,9 +56,18 @@ export const Task = (props) => {
                 Описание: {task.description}
             </p>
             <div className="controls">
-                <Button
+                <Button 
                     onClick={handleClickNext}
-                >{btnNextStatusText()}</Button>
+                    type="dashed"
+                >
+                    {btnNextStatusText()}
+                </Button>
+                <Button 
+                    danger
+                    type="dashed"
+                    icon={<DeleteOutlined />} 
+                    onClick={handleClickRemove}
+                />
             </div>
         </div>
     )
