@@ -1,4 +1,5 @@
 import React from "react";
+import { Empty } from "antd";
 
 import "./style.scss";
 import { TASK_STATUSES } from "../../../../shared/constants";
@@ -22,7 +23,7 @@ export const TasksList = (props) => {
             )
         }
 
-        return <p>Нет задач в статусе {statusText}</p>
+        return <Empty description={`Нет задач в статусе ${statusText}`}/>
     }
 
     return (
