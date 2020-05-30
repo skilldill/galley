@@ -1,0 +1,26 @@
+.not-found {
+    overflow: hidden;
+    position: relative;
+    height: calc(100% - 82px);
+
+    .kolyan {
+        position: absolute;
+        right: 0;
+        bottom: -530px;
+        width: 800px;
+        transition: all .3s ease-in;
+        transform: translateY(800px);
+    }
+
+    .kolyan-show {
+        transform: translateY(0px);
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 60px;
+        margin-top: 180px;
+        font-family: 'Ruslan Display', cursive;
+        color: #938282;
+    }
+}
