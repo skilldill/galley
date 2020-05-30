@@ -7,4 +7,9 @@ export class ApiService {
     static getBoard = () => {
         return httpClient.get(API_URLS.BOARD);
     }
+
+    /** Изменение задачи */
+    static changeTask = (task) => {
+        return httpClient.post(API_URLS.TASK_CHANGE, task);
+    }
 } 

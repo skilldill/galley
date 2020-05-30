@@ -5,6 +5,7 @@ import "./style.scss";
 import { LOAD_STATUSES } from "../../shared/constants";
 import { NavbarActions } from "../../store/navbar/navbar.actions";
 import { BoardActions } from "../../store/board/board.actions";
+import { TasksList } from "./components"
 
 export const Tasks = () => {
     const dispatch = useDispatch();
@@ -24,7 +25,16 @@ export const Tasks = () => {
 
     return (
         <div className="tasks">
-            Доска с карточками
+            {
+                !!tasks && (
+                    <div className="tasks-columns">
+                        <TasksList statusId={0} tasks={tasks} />
+                        <TasksList statusId={1} tasks={tasks} />
+                        <TasksList statusId={2} tasks={tasks} />
+                        <TasksList statusId={3} tasks={tasks} />
+                    </div>
+                )
+            } 
         </div>
     )
 }

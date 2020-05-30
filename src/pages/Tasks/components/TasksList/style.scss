@@ -1,0 +1,10 @@
+.tasks-list {
+    flex: 1;
+    max-width: 230px;
+
+    .tasks {
+        padding: 15px 10px;
+        background-color: white;
+        border-radius: 10px;
+    }
+}
