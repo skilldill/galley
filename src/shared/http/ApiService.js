@@ -20,7 +20,7 @@ export class ApiService {
 
     /** Получить количество кликов для граффиков */
     static getClicks = (count) => {
-        const url = API_URLS.CLICKS.replace(':clicks', count.toString());
+        const url = API_URLS.CLICKS.replace(':count', count.toString());
         return httpClient.get(url);
     }
 } 

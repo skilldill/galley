@@ -12,7 +12,7 @@ export class ChartActions {
     static fetchChartData = (count) => async (dispatch) => {
         try {
             const response = await ApiService.getClicks(count);
-            dispatch(setData(response.data));
+            dispatch(this.setData(response.data));
         } catch(error) {
             console.log(error);
         }
