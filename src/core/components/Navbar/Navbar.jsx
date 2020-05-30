@@ -7,6 +7,8 @@ export const Navbar = () => {
     const { title } = useSelector((state) => state.navbar);
 
     return (
-        <div className="navbar">{title}</div>
+        <div className="navbar">
+            <h1>{title}</h1>
+        </div>
     )
 }

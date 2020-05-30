@@ -16,8 +16,10 @@ export const RouterRoulet = () => {
     return (
         <Router>
             <div className="container">
-                <SideMenu routes={routes} />
-                <div>
+                <div className="container-side">
+                    <SideMenu routes={routes} />
+                </div>
+                <div className="container-content">
                     <Navbar />
                     <Route path="/">
                         <Redirect to={URLS.TASKS} />
