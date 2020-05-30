@@ -4,7 +4,9 @@ import { useSelector } from "react-redux";
 import "./style.scss";
 
 export const Navbar = () => {
+    const { title } = useSelector((state) => state.navbar);
+
     return (
-        <div className="navbar"></div>
+        <div className="navbar">{title}</div>
     )
 }

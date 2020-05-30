@@ -1,12 +1,17 @@
-import React from 'react';
 import 'antd/dist/antd.css';
 
+import React from 'react';
+import { Provider } from "react-redux";
+
+import { store } from "./store";
 import { RouterRoulet } from "./routing"
 
 export const App = () => {
   return (
     <div className="App">
-      <RouterRoulet />
+      <Provider store={store}>
+        <RouterRoulet />
+      </Provider>
     </div>
   );
 }
