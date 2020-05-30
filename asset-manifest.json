@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/galley/static/css/main.8ac81958.chunk.css",
+    "main.js": "/galley/static/js/main.3f9ecd8c.chunk.js",
+    "main.js.map": "/galley/static/js/main.3f9ecd8c.chunk.js.map",
+    "runtime-main.js": "/galley/static/js/runtime-main.2a3a4b6a.js",
+    "runtime-main.js.map": "/galley/static/js/runtime-main.2a3a4b6a.js.map",
+    "static/css/2.63b65d4e.chunk.css": "/galley/static/css/2.63b65d4e.chunk.css",
+    "static/js/2.b36e7df0.chunk.js": "/galley/static/js/2.b36e7df0.chunk.js",
+    "static/js/2.b36e7df0.chunk.js.map": "/galley/static/js/2.b36e7df0.chunk.js.map",
+    "index.html": "/galley/index.html",
+    "precache-manifest.dc5df34f4ca6f7dff0de912b0753b392.js": "/galley/precache-manifest.dc5df34f4ca6f7dff0de912b0753b392.js",
+    "service-worker.js": "/galley/service-worker.js",
+    "static/css/2.63b65d4e.chunk.css.map": "/galley/static/css/2.63b65d4e.chunk.css.map",
+    "static/css/main.8ac81958.chunk.css.map": "/galley/static/css/main.8ac81958.chunk.css.map",
+    "static/js/2.b36e7df0.chunk.js.LICENSE.txt": "/galley/static/js/2.b36e7df0.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/galley/static/media/papper.86df381e.png",
+    "static/media/Колян.png": "/galley/static/media/Колян.fd0bd9d2.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2a3a4b6a.js",
+    "static/css/2.63b65d4e.chunk.css",
+    "static/js/2.b36e7df0.chunk.js",
+    "static/css/main.8ac81958.chunk.css",
+    "static/js/main.3f9ecd8c.chunk.js"
+  ]
+}
