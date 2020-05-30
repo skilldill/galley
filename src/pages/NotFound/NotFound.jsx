@@ -11,7 +11,7 @@ export const NotFound = () => {
     const dispatch = useDispatch();
     
     useEffect(() => {
-        dispatch(NavbarActions.setTitle('Пууустооо...'))
+        dispatch(NavbarActions.setTitle('404 Пууустооо...'))
         const timerKolyan = setTimeout(() => {
             setShowKolyan(true);
         }, 100);

@@ -1,5 +1,5 @@
 export const URLS = {
-    RATING: '/rating/:id',
+    RATING: '/rating',
     TASKS: '/tasks',
     USERS_LIST: '/users_list'
 }
@@ -8,7 +8,8 @@ export const API_URLS = {
     BASE: 'http://localhost:3000',
     BOARD: '/board',
     TASK_CHANGE: '/task/change',
-    USERS: '/users'
+    USERS: '/users',
+    CLICKS: '/clicks/:count'
 }
 
 export const LOAD_STATUSES = {

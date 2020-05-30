@@ -1,5 +1,5 @@
 import { httpClient } from "./httpClient";
-import { API_URLS } from "../constants";
+import { API_URLS, URLS } from "../constants";
 
 export class ApiService {
     
@@ -16,5 +16,11 @@ export class ApiService {
     /** Получение гребцов */
     static getUsers = () => {
         return httpClient.get(API_URLS.USERS);
+    }
+
+    /** Получить количество кликов для граффиков */
+    static getClicks = (count) => {
+        const url = API_URLS.CLICKS.replace(':clicks', count.toString());
+        return httpClient.get(url);
     }
 } 

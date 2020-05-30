@@ -23,7 +23,7 @@ export const TasksList = (props) => {
             )
         }
 
-        return <Empty description={`Нет задач в статусе ${statusText}`}/>
+        return <Empty description={`Нет задач в статусе "${statusText}"`}/>
     }
 
     return (
