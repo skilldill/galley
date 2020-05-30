@@ -5,6 +5,13 @@ export const URLS = {
 }
 
 export const API_URLS = {
-    BASE: 'https://galley-jr6l7s7e6a-uc.a.run.app',
+    BASE: 'http://localhost:3000',
     BOARD: '/board'
 }
+
+export const LOAD_STATUSES = {
+    LOADING: 'LOADING',
+    READY: 'READY'
+}
+
+export const DELAY_BOARD = 10000;
