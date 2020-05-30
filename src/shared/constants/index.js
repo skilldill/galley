@@ -25,3 +25,4 @@ export const TASK_STATUSES = [
 ]
 
 export const DELAY_BOARD = 10000;
+export const DELAY_CHART = 2000;

@@ -8,12 +8,19 @@ import { ChartActions } from "../../store/chart/chart.actions";
 
 export const Rating = () => {
     const dispatch = useDispatch();
-    const { data } = useSelector((state) => state.chart);
+    const { data, signal } = useSelector((state) => state.chart);
 
     useEffect(() => {
         dispatch(NavbarActions.setTitle('Показатель гребли'));
         dispatch(ChartActions.fetchChartData(100));
     }, []);
+
+    useEffect(() => {
+        if (signal) {
+            dispatch(ChartActions.fetchChartData(100));
+            dispatch(ChartActions.setSignal(false));
+        }
+    }, [signal])
 
     const axes = [
         { primary: true, type: 'linear', position: 'bottom' },

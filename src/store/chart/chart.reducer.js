@@ -3,7 +3,7 @@ import { CHART_ACTION_TYPES } from "./chart.actions";
 
 const initialState = {
     data: [],
-    count: 10
+    signal: false
 }
 
 const prepareData = (data) => {
@@ -42,7 +42,12 @@ const mapReducer = {
             ...state,
             data: data.reverse()
         }
-    }
+    },
+
+    [CHART_ACTION_TYPES.SET_SIGNAL]: (state, action) => ({
+        ...state,
+        signal: action.payload
+    })
 }
 
 export const chartReducer = handleActions(mapReducer, initialState);
