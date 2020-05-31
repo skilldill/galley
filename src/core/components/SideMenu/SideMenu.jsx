@@ -4,6 +4,7 @@ import cn from "classnames";
 
 import "./style.scss";
 import incvisitionPng from "../../../assets/Инквизитор.png";
+import { URLS } from "../../../shared/constants";
 
 const MenuItem = (props) => {
     const { route, active } = props;
@@ -32,10 +33,18 @@ export const SideMenu = (props) => {
     const { routes } = props;
     const filtredRoutes = routes.filter((route) => !!route.name);
     const { pathname } = useLocation();
+    const history = useHistory();
+
+    const handleClick = () => {
+        history.push(URLS.HOME);
+    }
 
     return (
         <div className="side-menu">
-            <h1 className="side-menu-title">
+            <h1 
+                className="side-menu-title"
+                onClick={handleClick}
+            >
                 GALLEY
             </h1>
             {
