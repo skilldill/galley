@@ -9,7 +9,8 @@ export const API_URLS = {
     BOARD: '/board',
     TASK_CHANGE: '/task/change',
     USERS: '/users',
-    CLICKS: '/clicks/:count'
+    CLICKS: '/clicks/:count',
+    TASK_CREATE: '/task/create'
 }
 
 export const LOAD_STATUSES = {
@@ -24,5 +25,5 @@ export const TASK_STATUSES = [
     "Разработка завершена"
 ]
 
-export const DELAY_BOARD = 10000;
+export const DELAY_BOARD = 5000;
 export const DELAY_CHART = 2000;

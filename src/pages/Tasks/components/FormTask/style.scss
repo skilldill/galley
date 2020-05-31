@@ -1,0 +1,17 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.144);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .form-task {
+        width: 500px;
+        background-color: white;
+        padding: 20px;
+    }
+}

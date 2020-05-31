@@ -23,4 +23,9 @@ export class ApiService {
         const url = API_URLS.CLICKS.replace(':count', count.toString());
         return httpClient.get(url);
     }
+
+    /** Создание задачи */
+    static createTask = (data) => {
+        return httpClient.post(API_URLS.TASK_CREATE, data);
+    }
 } 
