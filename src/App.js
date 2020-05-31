@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 
 import { store } from "./store";
 import { RouterRoulet } from "./routing"
+import { PushButton } from "./core/components";
 
 export const App = () => {
   return (
@@ -12,6 +13,7 @@ export const App = () => {
       <Provider store={store}>
         <RouterRoulet />
       </Provider>
+      <PushButton />
     </div>
   );
 }
