@@ -22,7 +22,7 @@ export const RouterRoulet = () => {
                 <div className="container-content">
                     <Navbar />
                     <Route path="/">
-                        <Redirect to={URLS.TASKS} />
+                        <Redirect to={URLS.HOME} />
                     </Route>
                     <Switch>
                         {

@@ -1,4 +1,5 @@
 export const URLS = {
+    HOME: '/home',
     RATING: '/rating',
     TASKS: '/tasks',
     USERS_LIST: '/users_list'

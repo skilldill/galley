@@ -1,7 +1,11 @@
 import { URLS } from "../shared/constants";
-import { Rating, Tasks, Users } from "../pages";
+import { Rating, Tasks, Users, Home } from "../pages";
 
 export const routes = [
+    {
+        path: URLS.HOME, 
+        component: Home
+    },
     {
         path: URLS.TASKS, 
         name: 'Доска с карточками',
