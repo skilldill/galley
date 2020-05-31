@@ -3,6 +3,7 @@ import { useHistory, useLocation } from "react-router-dom";
 import cn from "classnames";
 
 import "./style.scss";
+import incvisitionPng from "../../../assets/Инквизитор.png";
 
 const MenuItem = (props) => {
     const { route, active } = props;
@@ -34,6 +35,9 @@ export const SideMenu = (props) => {
 
     return (
         <div className="side-menu">
+            <h1 className="side-menu-title">
+                GALLEY
+            </h1>
             {
                 filtredRoutes.map((route, i) => 
                     <MenuItem 
@@ -43,6 +47,9 @@ export const SideMenu = (props) => {
                     />
                 )
             }
+            <div className="picture">
+                <img src={incvisitionPng} alt="инквизитор"/>
+            </div>
         </div>
     )
 }
