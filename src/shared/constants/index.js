@@ -10,7 +10,8 @@ export const API_URLS = {
     TASK_CHANGE: '/task/change',
     USERS: '/users',
     CLICKS: '/clicks/:count',
-    TASK_CREATE: '/task/create'
+    TASK_CREATE: '/task/create',
+    SEND_MESSAGE: '/push/send'
 }
 
 export const LOAD_STATUSES = {

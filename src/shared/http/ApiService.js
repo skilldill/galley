@@ -28,4 +28,9 @@ export class ApiService {
     static createTask = (data) => {
         return httpClient.post(API_URLS.TASK_CREATE, data);
     }
+
+    /** Уведомление */
+    static sendMessage = () => {
+        return httpClient.post(API_URLS.SEND_MESSAGE);
+    }
 } 
