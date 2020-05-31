@@ -1,13 +1,24 @@
 .user {
     display: flex;
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.438);
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.144);
+    max-width: 700px;
 
     .avatar {
         margin-right: 50px;
+        img {
+            width: 110px;
+        }
     }
     .info {
         h3 {
-            font-size: 40px;
+            font-size: 30px;
+            margin: 5px;
+            font-family: 'Ruslan Display', cursive;
         }
     }
 
