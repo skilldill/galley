@@ -24,7 +24,8 @@ export const Users = () => {
                                 <User 
                                     key={i}
                                     name={user['first_name']} 
-                                    secondName={user['second_name']} 
+                                    secondName={user['second_name']}
+                                    index={i + 1}
                                 />
                             )
                         )
