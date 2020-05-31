@@ -9,12 +9,12 @@ export const routes = [
     },
     {
         path: URLS.USERS_LIST, 
-        name: 'Гребцы',
+        name: 'Состав галеры',
         component: Users
     },
     { 
         path: URLS.RATING,
-        name: "График работы гребцов",
+        name: "Показатели гребли",
         component: Rating,
     }
 ]

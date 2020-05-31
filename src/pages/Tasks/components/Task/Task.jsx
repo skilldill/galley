@@ -53,7 +53,7 @@ export const Task = (props) => {
         <div className={classes}>
             <h3 className="task-title">Тема: {task.title}</h3>
             <p className="task-description">
-                Описание: {task.description}
+                Описание: <br/>{task.description}
             </p>
             <div className="controls">
                 <Button 
