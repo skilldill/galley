@@ -1,0 +1,14 @@
+.user {
+    display: flex;
+    align-items: center;
+
+    .avatar {
+        margin-right: 50px;
+    }
+    .info {
+        h3 {
+            font-size: 40px;
+        }
+    }
+
+}

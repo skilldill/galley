@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://skilldill.github.io/galley",
-  "proxy": "https://galley-jr6l7s7e6a-uc.a.run.app",
+
   "dependencies": {
     "@ant-design/icons": "^4.2.1",
     "@testing-library/jest-dom": "^4.2.4",

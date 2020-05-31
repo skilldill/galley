@@ -5,7 +5,7 @@ export const URLS = {
 }
 
 export const API_URLS = {
-    BASE: 'http://localhost:3000',
+    BASE: 'https://galley-jr6l7s7e6a-uc.a.run.app',
     BOARD: '/board',
     TASK_CHANGE: '/task/change',
     USERS: '/users',
